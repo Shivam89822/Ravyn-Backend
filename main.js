@@ -33,7 +33,7 @@ const allowedOrigins = [
 ];
 
 app.use(cors({
-  origin: allowedOrigins,
+  origin: true,
   credentials: true
 }));
    
@@ -66,7 +66,7 @@ main()
 const ioServer=createServer(app);
 const io = new Server(ioServer, {
   cors: {
-    origin: allowedOrigins,
+    origin: true,
     credentials: true,
   }
 });
