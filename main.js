@@ -29,7 +29,7 @@ cron.schedule("*/5 * * * *", async () => {
 
 const allowedOrigins = [
   "http://localhost:3000",
-  "https://ravynshivam.netlify.app/"
+  "https://ravynshivam.netlify.app"
 ];
 
 app.use(cors({
